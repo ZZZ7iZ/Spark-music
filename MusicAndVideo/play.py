@@ -110,7 +110,7 @@ async def play(client, m: Message):
     if replied:
         if replied.audio or replied.voice:
             await m.delete()
-            huehue = await replied.reply("**جاري البحث عن الاغنية ⚡️.**")
+            huehue = await replied.reply("**انتظࢪ شوي يࢪوحي.**")
             dl = await replied.download()
             link = replied.link
             if replied.audio:
@@ -125,7 +125,7 @@ async def play(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/8efbe93b81985bb648d95.jpg",
+                    photo="https://te.legra.ph/file/2a726c634dbc3b9e8f451.jpg",
                     caption=f"""
 تمت اضافتها الى قائمة الانتظار {pos}
 الاسم: [{songname}]({link})
@@ -145,7 +145,7 @@ async def play(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/1c45f4fac38e5a84a8844.jpg",
+                    photo="https://te.legra.ph/file/2a726c634dbc3b9e8f451.jpg",
                     caption=f"""
 الحالة: تم التشغيل بنجاح ⚡️
 الاسم: [{songname}]({link})
@@ -161,7 +161,7 @@ async def play(client, m: Message):
             )
         else:
             await m.delete()
-            huehue = await m.reply("جاري البحث عن الاغنية ⚡️.")
+            huehue = await m.reply("انتظࢪ شوي يࢪوحي..")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search == 0:
@@ -219,7 +219,7 @@ async def vplay(client, m: Message):
     if replied:
         if replied.video or replied.document:
             await m.delete()
-            huehue = await replied.reply("**جاري البحث عن الفيديو انتظر ⚡️.**")
+            huehue = await replied.reply("**انتظࢪ شوي يࢪوحي.**")
             dl = await replied.download()
             link = replied.link
             if len(m.command) < 2:
