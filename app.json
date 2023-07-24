@@ -1,5 +1,5 @@
 {
-    "name": "سورس ريبثون ميوزك",
+    "name": "سورس سبارك ميوزك",
     "description": "لتشغيل الاغاني في المجموعات والقنوات.",
     "logo": "https://graph.org/file/1c45f4fac38e5a84a8844.jpg",
     "keywords": [
@@ -21,7 +21,7 @@
         "HNDLR": {
             "description": "لاتغيرها ابدا",
             "required": false,
-            "value": "$"
+            "value": ""
         },
             "API_HASH": {
             "description": "ايبي هاش",
@@ -31,7 +31,7 @@
            "SUDO_USERS": {
             "description": "اكتب ايدي المطور او اتركها كما هي",
             "required": true,
-            "value": "5502537272"
+            "value": "5012406813"
         }
     },
     "addons": [],
